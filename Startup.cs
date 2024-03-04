@@ -17,6 +17,7 @@ namespace WebApplication
             services.AddScoped(typeof(IAnonymousEurosongDataContext), typeof(AnonymousEurosongDataList));
 
             services.AddSingleton(typeof(IAnonymousEurosongDataContext), typeof(AnonymousEurosongDataList));
+            services.AddControllers();
 
 
         }
