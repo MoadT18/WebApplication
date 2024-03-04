@@ -29,5 +29,20 @@ namespace WebApplication.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost(Name = "PostWeatherForecast")]
+        public string Post()
+        {
+
+
+            return "post method";
+        }
+
+
+        [HttpGet("summaries", Name = "GetSummaries")]
+        public string[] GetSummaries()
+        {
+            return Summaries;
+        }
     }
 }
